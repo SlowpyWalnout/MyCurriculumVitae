@@ -1,0 +1,130 @@
+h3{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+}
+/* List */
+#list li{
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul, ol{
+    list-style: none;
+    padding-left: 0%;
+}
+/* Header */
+header{
+    padding: 0px;
+    margin: 0%;
+}
+header img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.presentation{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.presentationData{
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+}
+nav{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+nav li:hover{
+    background-color: rgb(125, 38, 38);
+    color: white;
+    transition: 0.3s;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgb(125, 38, 38);
+    cursor: pointer;
+
+}
+/* Body */
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%
+}
+main{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    width: 30%;
+}
+.right{
+    width: 60%;
+}
+/* footer */
+footer{
+    text-align: center;
+    background-color: rgb(33, 27, 27);
+    padding: 10px;
+}
+footer h3{
+    color: rgb(134, 134, 134);
+}
+footer a{
+    color: rgb(134, 134, 134);
+    text-decoration: none;
+}
+.socialNetworks{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px;
+}
+.socialNetworks article{
+    margin: 0 30px;
+}
+@media only screen 
+  and (min-device-width: 319px) 
+  and (max-device-width: 812px){ 
+    /* *{border: black solid 1px;} */
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid rgb(177, 177, 177);
+
+    }
+    #list{
+        display: flex;
+        width: .8 em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .socialNetworks{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
